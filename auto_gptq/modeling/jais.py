@@ -7,7 +7,6 @@ class JAISGPTQForCausalLM(BaseGPTQForCausalLM):
         "transformer.wte", "transformer.ln_f", "transformer.relative_pe"
     ]
     inside_layer_modules = [
-        ["ln_1"],
         ["attn.c_attn", "attn.c_proj"],
         ["ln_2"],
         ["mlp.c_fc", "mlp.c_fc2", "mlp.c_proj"]
